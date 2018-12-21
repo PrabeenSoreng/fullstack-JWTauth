@@ -1,0 +1,12 @@
+nav {
+    background: #64b5f6;
+}
+
+.brand-logo {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+li a {
+    font-size: 20px;
+}

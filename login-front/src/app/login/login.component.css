@@ -1,0 +1,12 @@
+#title {
+    color: #64bdf6;
+    padding: 8px;
+    margin-top: 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn-primary {
+    background: #64bdf6;
+    font-weight: bold;
+}
