@@ -10,3 +10,12 @@
     background: #64bdf6;
     font-weight: bold;
 }
+
+.validate.ng-touched.ng-invalid .active {
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+}
+
+.error {
+    color: red;
+}
