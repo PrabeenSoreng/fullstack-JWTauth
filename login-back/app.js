@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const signup = require('./routes/signup');
+const login = require('./routes/login');
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/auth', signup);
+app.use('/api/auth', login);
 
 mongoose.connect('mongodb://localhost/loginApp', { useNewUrlParser: true })
     .then(() => {
