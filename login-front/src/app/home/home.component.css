@@ -1,0 +1,17 @@
+.title {
+    text-align: center;
+}
+
+table {
+    border-spacing: 0 5px;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+
+/* table td {
+    background-color: #eeeeee;
+} */

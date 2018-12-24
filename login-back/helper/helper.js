@@ -1,10 +1,10 @@
 const jwt = require('jsonwebtoken');
 
 exports.checkAuthToken = (req, res, next) => {
-    if (!req.headers.Authorization) {
+    if (!req.headers.authorization) {
         return res.status(500).json({ message: 'No Authorization' });
     }
-    const token = req.headers.Authorization.split(' ')[1];
+    const token = req.headers.authorization.split(' ')[1];
     if (!token) {
         return res.status(500).json({ message: 'No token found' });
     }

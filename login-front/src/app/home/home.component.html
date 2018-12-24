@@ -1,1 +1,22 @@
 <h1>Home Component</h1>
+<div class="container">
+    <div class="row">
+        <h2 class="title">All Users</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.username}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

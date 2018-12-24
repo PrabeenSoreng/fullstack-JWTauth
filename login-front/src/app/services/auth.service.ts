@@ -20,4 +20,8 @@ export class AuthService {
   loginUser(body): Observable<LogAuth> {
     return this.http.post<LogAuth>(`${url}/login`, body);
   }
+
+  getUsers(): Observable<any>{
+    return this.http.get(`${url}/get-users`);
+  }
 }
